@@ -21,7 +21,8 @@
     "ktlint:format": "cd native/androidTest; ./gradlew ktlintFormat",
     "android:emulator": "./scripts/emulatorWithJavaCheck",
     "docs": "./scripts/mdbook",
-    "prepare": "NODE_ENV=production node ./scripts/make.js"
+    "prepare": "NODE_ENV=production node ./scripts/make.js",
+    "postinstall": "NODE_ENV=production node ./scripts/make.js",
   },
   "author": "@Nozbe",
   "homepage": "https://github.com/Nozbe/WatermelonDB#readme",
